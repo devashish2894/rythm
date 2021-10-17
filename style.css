@@ -1,0 +1,32 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+/* ////////body/////////// */
+
+body{background: rgb(48, 47, 47);height: 100vh;}
+body::after{content: '';position: absolute;height: 100%;width: 100%;top: 0;left: 0;background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #aa6c99 0%, #a88beb 74%);clip-path: circle(30% at right 70%);
+    }
+
+    body::before{content: '';position: absolute;height: 100%;width: 100%;top: 0;left: 0;background-color: #f8ceec;
+        background-image: linear-gradient(315deg, #cf47ab 0%, #af9bdf 74%);clip-path: circle(20% at 10% 10%);z-index: -1;}
+
+
+       /* ////////// nav////////////// */
+        nav{background-color: rgb(88, 88, 88,0.6);height: 40px;margin-bottom: 50px;backdrop-filter: blur(5px);}
+      .count{width: 160px;float: right;height: 40px;padding: 10px 0;color: rgb(255, 255, 255);}
+       .flag{width: 67px;height:42px;float: right;margin: -42px 26px;}
+                 
+         /* /////////////title///////// */
+        .title{width: 100%;height: 100px;margin: auto;text-align: center;padding:4px 0;}
+        .title h1{font-size: 53px;font-family: 'Dancing Script', cursive;color: rgb(238, 234, 234);}
+        .title p{color: rgb(238, 234, 234);font-size: 25px;font-family: 'Dancing Script', cursive;}
+       
+       
+        /* ////////card container//////////// */
+        .container{max-width: 1200px;display: flex;justify-content: center;align-items: center;position: relative;flex-wrap: wrap;z-index: 1;margin: 105px auto;}
+        .container .card{height: 300px;width: 280px;margin: 30px;background: rgb(68, 67, 67,0.2);border-radius: 20px;box-shadow: 20px 20px 20px rgb(27, 27, 27);overflow: hidden;display: flex;align-items: center;justify-content: center;border-top: 1px solid rgb(155, 155, 155);border-left:1px solid rgb(155, 155, 155) ;
+                  backdrop-filter: blur(5px);}
+             .container .card .content img{height: 100px;}
+             .container .card .content{padding: 12px;text-align: center;color: white;}
+
+                 .content a{color: tomato;text-decoration: none;display: block;margin-top: 10px;}
+ 

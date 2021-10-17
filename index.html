@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/brands.min.css" integrity="sha512-lCU0XyQA8yobR7ychVxEOU5rcxs0+aYh/9gNDLaybsgW9hdrtqczjfKVNIS5doY0Y5627/+3UVuoGv7p8QsUFw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>rythm</title>
+</head>
+
+<body>
+    <header>
+        <!-- ////////nav selector///////////// -->
+        <nav>
+            <div class="count">
+                country:<select>
+                    <option>select</option>
+                  <option value="a">India</option>
+                  <option value="b">America</option>
+                  <option value="c">Europe</option>
+                  <option value="d">Korea</option>
+                  <option value="e">China</option>
+                  <option value="f">Singapore</option>
+                  <option value="g">Cannada</option>
+                  <option value="h">Australia</option>
+                  <option value="i">Japan</option>
+
+                </select>
+            </div>
+        </nav>
+
+
+        <!-- //////flag/////// -->
+        <div class="flag"></div>
+    </header>
+
+
+    <!-- /////////main page/////////// -->
+    <div class="title">
+       <h1> Rythm</h1>
+       <p>Music from around the globe</p>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+               <img src="images/1.png">
+               <h2>global</h2>
+               <p>dance, techno, romania,hiphop,country and jazz. </p>
+                       
+                       <a href="#">explore</a>
+                    </div>
+    
+</div>
+
+<div class="card">
+    <div class="content">
+       <img src="images/1.png">
+       <h2>regional</h2>
+       <p>folks,regional hits,party numbers of any era of particular region </p>
+               
+               <a href="#">explore</a>
+            </div>
+
+</div>
+<div class="card">
+    <div class="content">
+       <img src="images/1.png">
+       <h2>podcasts</h2>
+       <p>listen to the mind-opening podcasts from around the globe </p>
+               
+               <a href="#">explore</a>
+            </div>
+
+</div>
+</div>
+
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<!-- ////////tilt///// -->
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400
+	});
+
+
+
+
+
+//////flags///////
+var select=document.querySelector('select');
+var html=document.querySelector('.flag')
+ 
+ select.addEventListener('change',backgrounds);
+
+ function backgrounds(){
+     var choice=select.value;
+     if (choice==='a'){
+         html.style.backgroundImage="url('flags/s1.png')";
+     }
+ 
+     else if (choice==='b'){
+         html.style.backgroundImage="url('flags/s2.png')";
+     }
+
+     else if (choice==='c'){
+         html.style.backgroundImage="url('flags/s3.png')";
+     }
+     else if (choice==='d'){
+         html.style.backgroundImage="url('flags/s4.png')";
+     }
+
+     else if (choice==='e'){
+         html.style.backgroundImage="url('flags/s5.png')";
+     }
+
+     else if (choice==='f'){
+         html.style.backgroundImage="url('flags/s6.png')";
+     }
+     else if (choice==='g'){
+         html.style.backgroundImage="url('flags/s8.png')";
+     }
+      else if (choice==='h'){
+         html.style.backgroundImage="url('flags/s9.png')";
+     }  else if(choice==='i'){
+        html.style.backgroundImage="url('flags/s10.png')";
+
+     }
+
+
+ 
+ 
+    }
+
+
+
+
+
+    </script>
+   
+
+    
+</body>
+
+</html>
